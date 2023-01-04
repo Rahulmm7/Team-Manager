@@ -1,5 +1,6 @@
 import { useState } from "react"
 import femaleProfile from '../images/femaleProfile.jpg'
+import maleProfile from '../images/maleProfile.jpg'
 import './style/Employee.scss'
 const Employess = () => {
 
@@ -89,7 +90,24 @@ const Employess = () => {
     }]);
 
     return (
-        <main className="container">
+        <main className="container ">
+            <div className="introsection">
+
+                <h1>Team Member Allocation</h1>
+                <h3>Team x has x members</h3>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select your Team
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Team A</a>
+                        <a class="dropdown-item" href="#">Team B</a>
+                        <a class="dropdown-item" href="#">Team C</a>
+                    </div>
+                </div>
+            </div>
+
             <div className="row justify-content-center mb-3 mt-3">
                 <div className="col-8">
                     <div className="card-collection">
@@ -97,7 +115,9 @@ const Employess = () => {
                         {
                             employees.map((employee) => (
                                 <div id={employee.id} className="card m-2">
-                                    <img src={femaleProfile} className="card-img-top" />
+
+                                    {(employee.gender === 'male') ? <img src={maleProfile} className="card-img-top" /> :
+                                        <img src={femaleProfile} className="card-img-top" />}
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             Full Name : {employee.fullName}
