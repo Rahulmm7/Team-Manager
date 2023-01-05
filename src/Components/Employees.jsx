@@ -7,87 +7,110 @@ const Employess = () => {
     const [employees, setEmployees] = useState([{
         id: 1,
         fullName: "Bob Jones",
-        designation: "JavaScript Developer",
+        Position: "FWD",
+        PAC: 99,
         gender: "male",
         teamName: "TeamA"
     },
     {
         id: 2,
         fullName: "Jill Bailey",
-        designation: "Node Developer",
+        Position: "CMF",
+        PAC: 89,
         gender: "female",
         teamName: "TeamA"
     },
     {
         id: 3,
         fullName: "Gail Shepherd",
-        designation: "Java Developer",
+        Position: "CMF",
+        PAC: 69,
         gender: "female",
         teamName: "TeamA"
     },
     {
         id: 4,
         fullName: "Sam Reynolds",
-        designation: "React Developer",
+        Position: "GK",
+        PAC: 99,
         gender: "male",
         teamName: "TeamB"
     },
     {
         id: 5,
         fullName: "David Henry",
-        designation: "DotNet Developer",
+        Position: "LB",
+        PAC: 99,
         gender: "male",
         teamName: "TeamB"
     },
     {
         id: 6,
         fullName: "Sarah Blake",
-        designation: "SQL Server DBA",
+        Position: "CB",
+        PAC: 99,
         gender: "female",
         teamName: "TeamB"
     },
     {
         id: 7,
         fullName: "James Bennet",
-        designation: "Angular Developer",
+        Position: "CB",
+        PAC: 99,
         gender: "male",
         teamName: "TeamC"
     },
     {
         id: 8,
         fullName: "Jessica Faye",
-        designation: "API Developer",
+        Position: "DMF",
+        PAC: 99,
         gender: "female",
         teamName: "TeamC"
     },
     {
         id: 9,
         fullName: "Lita Stone",
-        designation: "C++ Developer",
-        gender: "female",
+        Position: "LWF",
+        PAC: 99,
+        Pac: "female",
         teamName: "TeamC"
     },
     {
         id: 10,
         fullName: "Daniel Young",
-        designation: "Python Developer",
+        Position: "RWF",
+        PAC: 99,
         gender: "male",
         teamName: "TeamD"
     },
     {
         id: 11,
         fullName: "Adrian Jacobs",
-        designation: "Vue Developer",
+        Position: "ST",
+        PAC: 99,
         gender: "male",
         teamName: "TeamD"
     },
     {
         id: 12,
         fullName: "Devin Monroe",
-        designation: "Graphic Designer",
+        Position: "CMF",
+        PAC: 99,
         gender: "male",
         teamName: "TeamD"
     }]);
+
+
+    const [selectedValue, setSelectedValue] = useState('');
+    const options = ["Team A", "Team B", "Team C"];
+    function handleChange(event) {
+        setSelectedValue(event.target.value)
+    }
+
+
+
+
 
     return (
         <main className="container ">
@@ -97,19 +120,21 @@ const Employess = () => {
                 <h3>Team x has x members</h3>
 
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select your Team
+                    <button class="btn dropdown-toggle" data-toggle="dropdown" >
+                        <input type="text" placeholder="Select your team" value={selectedValue} />
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Team A</a>
-                        <a class="dropdown-item" href="#">Team B</a>
-                        <a class="dropdown-item" href="#">Team C</a>
+
+                    <div class="dropdown-menu" >
+                        <a class="dropdown-item" href="#">FC Barcelona</a>
+                        <a class="dropdown-item" href="#">Real Madrid FC</a>
+                        <a class="dropdown-item" href="#">Manchester United</a>
                     </div>
+
                 </div>
             </div>
 
-            <div className="row justify-content-center mb-3 mt-3">
-                <div className="col-8">
+            <div className="row-full justify-content-center mb-3 mt-3">
+                <div className="col">
                     <div className="card-collection">
 
                         {
@@ -119,12 +144,21 @@ const Employess = () => {
                                     {(employee.gender === 'male') ? <img src={maleProfile} className="card-img-top" /> :
                                         <img src={femaleProfile} className="card-img-top" />}
                                     <div className="card-body">
+
                                         <h5 className="card-title">
-                                            Full Name : {employee.fullName}
+                                            {employee.fullName}
                                         </h5>
-                                        <p className="card-description">
-                                            Designation : {employee.designation}
-                                        </p>
+                                        <div className="player-details">
+                                            <div class="row">
+                                                <div class="col"> Position  {employee.Position}</div>
+                                                <div class="col">col</div>
+                                                <div class="col">col</div>
+                                                <div class="w-20"></div>
+                                                <div class="col">col</div>
+                                                <div class="col">col</div>
+                                                <div class="col">col</div>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
