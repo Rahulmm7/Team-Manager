@@ -150,10 +150,10 @@ const Employess = () => {
                                         </h5>
                                         <div className="player-details">
                                             <div class="row">
-                                                <div class="col"> Position  {employee.Position}</div>
+                                                <div class="col">{employee.PAC} PAC </div>
                                                 <div class="col">col</div>
                                                 <div class="col">col</div>
-                                                <div class="w-20"></div>
+                                                <div class="w-50"></div>
                                                 <div class="col">col</div>
                                                 <div class="col">col</div>
                                                 <div class="col">col</div>
