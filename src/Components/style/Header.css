@@ -5,3 +5,12 @@
 header {
     background-color: #333533;
 }
+
+.logo-img {
+    object-fit: fill;
+}
+
+.logo-container {
+    height: 30px;
+    width: 50px;
+}

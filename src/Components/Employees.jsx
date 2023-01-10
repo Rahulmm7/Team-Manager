@@ -2,7 +2,7 @@ import { useState } from "react"
 import femaleProfile from '../images/femaleProfile.jpg'
 import maleProfile from '../images/maleProfile.jpg'
 import './style/Employee.scss'
-const Employess = () => {
+const Employees = () => {
 
     const [employees, setEmployees] = useState([{
         id: 1,
@@ -172,4 +172,4 @@ const Employess = () => {
     )
 }
 
-export default Employess
+export default Employees
