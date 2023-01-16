@@ -1,4 +1,4 @@
-import './style/Header.css'
+import './style/Header.scss'
 import { Link } from 'react-router-dom'
 
 
@@ -7,13 +7,13 @@ const Header = () => {
 
         <nav className="navigation-panel">
             <div className='row'>
-                <Link to={"/"}><i class="bi bi-house-fill"></i></Link>
+                <Link to={"/"}><i class="bi bi-house-fill home"></i></Link>
             </div>
             <div className='row'>
-                <Link to={"/Contents"}><i class="bi bi-list"></i></Link>
+                <Link to={"/Contents"}><i class="bi bi-list ham"></i></Link>
             </div>
             <div className='row'>
-                <Link to={"/About"}><i class="bi bi-envelope-fill"></i></Link>
+                <Link to={"/About"}><i class="bi bi-envelope-fill mail"></i></Link>
             </div>
         </nav>
 
