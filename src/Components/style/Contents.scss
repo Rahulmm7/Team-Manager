@@ -1,18 +1,19 @@
 .main-container {
     height: 100vh;
     width: 100%;
-    // margin-left: 80px;
-
     font-size: 60px;
     font-weight: 600;
 
+
+    a {
+        color: #d6d6d6;
+    }
 
     .top-row {
         height: 50%;
         display: flex;
         text-align: center;
         align-items: center;
-
 
         .leagues {
             height: 100%;
@@ -25,7 +26,6 @@
                 background: darken(#242424, 10%);
                 color: #2a9d8f;
             }
-
         }
 
 
@@ -53,10 +53,7 @@
                 background-color: rgba($color: #373737, $alpha: .75);
                 color: #90be6d;
             }
-
         }
-
-
     }
 
     .bottom-row {
@@ -64,9 +61,7 @@
         display: flex;
         text-align: center;
         align-items: center;
-        // background-color: #1a1a1a;
         color: #f2f2f2;
-
 
         .bottom-left-sec {
             display: flex;
@@ -87,7 +82,6 @@
                     background-color: darken(#373737, 10%);
                     color: #e9c46a;
                 }
-
             }
 
             .formation {
@@ -102,7 +96,6 @@
                     background-color: darken(#494949, 10%);
                     color: #e76f51;
                 }
-
             }
         }
 
@@ -117,10 +110,6 @@
                 background: darken(#242424, 10%);
                 color: lighten(#6a4c93, 10%);
             }
-
         }
-
-
-
     }
 }

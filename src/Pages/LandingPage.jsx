@@ -6,9 +6,8 @@ import Header from "../Components/Header";
 const LandingPage = () => {
     return (
         <div>
-            <Header text="Logo" />
+            {/* <Header text="Logo" /> */}
             <Employees />
-            <Footer />
         </div>
     );
 }

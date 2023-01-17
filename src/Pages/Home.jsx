@@ -1,17 +1,13 @@
-import Header from "../Components/Header"
 import "../Components/style/Home.scss"
+import Header from "../Components/Header"
 import Contents from "./Contents"
+import Welcome from "../Components/Welcome"
+import { useState } from "react"
 
 const Home = () => {
+    const [menuOpen, SetmenuOpen] = useState(false)
     return (
-
-        <div className="Home ">
-
-            <div className="left-section">
-                <Header />
-            </div>
-            <div className="right-section"><Contents /></div>
-        </div>
+        <div className="right-section"><Welcome /></div>
     )
 }
 
