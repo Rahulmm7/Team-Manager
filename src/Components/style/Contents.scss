@@ -37,7 +37,7 @@
             background-color: #373737;
 
             &:hover {
-                background-color: rgba($color: #373737, $alpha: .75);
+                background: darken(#373737, 10%);
                 color: #ef476f;
             }
         }
@@ -49,8 +49,9 @@
             align-items: center;
             background-color: #494949;
 
+
             &:hover {
-                background-color: rgba($color: #373737, $alpha: .75);
+                background: darken(#494949, 10%);
                 color: #90be6d;
             }
         }

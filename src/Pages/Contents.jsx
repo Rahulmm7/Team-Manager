@@ -1,24 +1,23 @@
 import { Link } from "react-router-dom"
-import Header from "../Components/Header"
 import "../Components/style/Contents.scss"
 
 const Contents = () => {
     return (
 
-
-
         <div className="main-container">
-            <div className="top-row ">
-                <Link to={"/Leagues"} className="col-md-6 col-sm-12 leagues text-decoration-none">Leagues</Link>
-                <div className="col-md-3 col-sm-12 teams">Teams</div>
-                <div className="col-md-3 col-sm-12 players">Players</div>
+            <div className="top-row text-decoration-none ">
+                <Link to={"/Leagues"} className="col-md-6 col-sm-12 leagues ">Leagues</Link>
+                <Link to={"/Teams"} className="col-md-3 col-sm-12 teams">Teams</Link>
+                <Link to={"/Players"} className="col-md-3 col-sm-12 players">Players</Link>
+
             </div>
             <div className="bottom-row">
                 <div className="col-6 bottom-left-sec">
-                    <div className=" fantasy">Fantasy</div>
-                    <div className=" formation">Formation</div>
+                    <Link to={"/Fantasy"} className="fantasy">Fantasy</Link>
+                    <Link to={"/Formation"} className="formation">Formation</Link>
                 </div>
-                <div className="col-6 favourites">Favourites</div>
+                <Link to={"/Favourites"} className="col-6 favourites">Favourites</Link>
+
             </div>
         </div>
 

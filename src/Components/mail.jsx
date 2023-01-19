@@ -1,4 +1,4 @@
-
+import "../Components/style/Mail.scss"
 const Mail = () => {
     return (
         <div className="Mail">
@@ -6,3 +6,4 @@ const Mail = () => {
         </div>
     )
 }
+export default Mail

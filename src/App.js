@@ -1,30 +1,17 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import LandingPage from "./Pages/LandingPage";
 import Error from "./Pages/Error";
 import Favourites from "./Pages/Favourites";
 import Contents from "./Pages/Contents";
 import Home from "./Pages/Home";
-import Header from "./Components/Header";
-import { useState } from "react";
-import Welcome from "./Components/Welcome";
+import Layout from "./Components/Layout";
+import Mail from "./Components/Mail";
+import Employees from "./Components/Employees";
+import Leagues from "./Pages/Leagues";
+import Teams from "./Pages/Teams";
+import Fantasy from "./Pages/Fantasy";
+import Formation from "./Pages/Formation";
 
-const Wrapper = () => {
-  const [menuOpen, SetmenuOpen] = useState(false)
-
-  return <div className="Home ">
-    <div className="left-section">
-      <Header menuOpen={menuOpen} menuChange={SetmenuOpen} />
-    </div>
-
-    {
-      menuOpen ?
-        <div className="right-section"><Contents /></div>
-        :
-        <div className="right-section"><Outlet></Outlet>  </div>
-    }
-  </div>
-}
 
 function App() {
   return (
@@ -32,24 +19,20 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path="/" element={<Wrapper />}>
-            <Route exact path="/home" element={<Welcome />} />
-
-            <Route exact path="/Landingpage" element={<LandingPage />} />
-            <Route exact path="/Favourites" element={<Favourites />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Contents" element={<Contents />} />
+            <Route path='/Leagues' element={<Leagues />} />
+            <Route path="/Teams" element={<Teams />} />
+            <Route path="/Fantasy" element={<Fantasy />} />
+            <Route path="Formation" element={<Formation />} />
+            <Route path="/Players" element={<Employees />} />
+            <Route path="/Favourites" element={<Favourites />} />
+            <Route path="/Mail" element={<Mail />} />
             <Route path="*" element={<Error />} />
-            <Route exact path="/Home" element={<Home />} />
 
           </Route>
-          <Route path="*" element={<Error />} />
-
-
-          {/*
-          <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/Landingpage" element={<LandingPage />} />
-          <Route exact path="/Contents" element={<Contents />} />
-          <Route exact path="/Favourites" element={<Favourites />} />
-          <Route path="*" element={<Error />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
