@@ -1,9 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import SignUp from "./Pages/SignUp";
-import LandingPage from "./Pages/LandingPage";
 import Error from "./Pages/Error";
 import Favourites from "./Pages/Favourites";
+import Contents from "./Pages/Contents";
+import Home from "./Pages/Home";
+import Layout from "./Components/Layout";
+import Mail from "./Components/Mail";
+import Employees from "./Components/Employees";
+import Leagues from "./Pages/Leagues";
+import Teams from "./Pages/Teams";
+import Fantasy from "./Pages/Fantasy";
+import Formation from "./Pages/Formation";
 
 
 function App() {
@@ -11,10 +18,21 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<SignUp />} />
-          <Route exact path="/Landingpage" element={<LandingPage />} />
-          <Route exact path="/Favourites" element={<Favourites />} />
-          <Route path="*" element={<Error />} />
+
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Contents" element={<Contents />} />
+            <Route path='/Leagues' element={<Leagues />} />
+            <Route path="/Teams" element={<Teams />} />
+            <Route path="/Fantasy" element={<Fantasy />} />
+            <Route path="Formation" element={<Formation />} />
+            <Route path="/Players" element={<Employees />} />
+            <Route path="/Favourites" element={<Favourites />} />
+            <Route path="/Mail" element={<Mail />} />
+            <Route path="*" element={<Error />} />
+
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

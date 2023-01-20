@@ -4,11 +4,10 @@ const Favourites = () => {
     return (
         <div className="Favourites">
             <h1>Favourites</h1>
-            <Link to="/LandingPage" >Home</Link>
+            <p>Coming soon..</p>
+            <Link to="/Contents" >Back</Link>
         </div>
-
     )
-
 }
 
 export default Favourites

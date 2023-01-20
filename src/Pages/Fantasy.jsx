@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom"
 
-const Teams = () => {
+const Fantasy = () => {
     return (
-        <div className="Teams">
-            <h1>Teams</h1>
+        <div className="Fantasy">
+            <h1>Fantasy</h1>
             <p>Coming soon..</p>
             <Link to="/Contents" >Back</Link>
+
         </div>
     )
 }
 
-export default Teams
+export default Fantasy

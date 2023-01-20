@@ -1,0 +1,23 @@
+.Home {
+    display: flex;
+    height: 100vh;
+
+    .left-section {
+        width: 80px;
+        background-color: #222222;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+    .right-section {
+        width: calc(100% - 80px);
+        padding: 0%;
+        background-color: #373737;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+    }
+}
