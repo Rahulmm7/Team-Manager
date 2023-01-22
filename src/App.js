@@ -11,6 +11,7 @@ import Leagues from "./Pages/Leagues";
 import Teams from "./Pages/Teams";
 import Fantasy from "./Pages/Fantasy";
 import Formation from "./Pages/Formation";
+import PlayerCard from "./Components/PlayerCard";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
             <Route path="/Teams" element={<Teams />} />
             <Route path="/Fantasy" element={<Fantasy />} />
             <Route path="Formation" element={<Formation />} />
-            <Route path="/Players" element={<Employees />} />
+            <Route path="/Players" element={<PlayerCard />} />
             <Route path="/Favourites" element={<Favourites />} />
             <Route path="/Mail" element={<Mail />} />
             <Route path="*" element={<Error />} />
