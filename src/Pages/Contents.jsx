@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../Components/style/Contents.scss"
+import "./Contents.scss"
 
 const Contents = () => {
     return (

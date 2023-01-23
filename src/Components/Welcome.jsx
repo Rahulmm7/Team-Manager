@@ -1,10 +1,12 @@
-
+import "./Welcome.scss"
 const Welcome = () => {
     return (
         <div className="welcome-container">
-            <p>
-                Welcome to False9. <br /> Your ultimate football page.
-            </p>
+            <div>
+                <p>
+                    Welcome to False9. <br /> Your ultimate football page.
+                </p>
+            </div>
         </div>
     )
 }

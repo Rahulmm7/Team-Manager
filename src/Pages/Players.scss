@@ -1,0 +1,16 @@
+.Players {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111;
+    height: 100vh;
+    overflow-y: auto;
+
+
+}
+
+.player-card {
+    padding: 20px 20px 20px 20px;
+    background-color: #111;
+}

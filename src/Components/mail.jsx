@@ -1,4 +1,4 @@
-import "../Components/style/Mail.scss"
+import "./Mail.scss"
 const Mail = () => {
     return (
         <div className="Mail">

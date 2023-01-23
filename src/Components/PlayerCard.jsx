@@ -1,4 +1,4 @@
-import "../Components/style/PlayerCard.scss"
+import "./PlayerCard.scss"
 
 const PlayerCard = () => {
     return (
@@ -24,7 +24,7 @@ const PlayerCard = () => {
                     <div class="player-card-bottom">
                         <div class="player-info">
                             {/* <!-- Player Name--> */}
-                            <div class="player-name"><span>MESSI</span></div>
+                            <div class="player-name"><span>RAHUL</span></div>
                             {/* <!-- Player Features--> */}
                             <div class="player-features">
                                 <div class="player-features-col"><span>

@@ -1,4 +1,4 @@
-import "../Components/style/Home.scss"
+import "./Home.scss"
 import Welcome from "../Components/Welcome"
 
 const Home = () => {

@@ -6,12 +6,13 @@ import Contents from "./Pages/Contents";
 import Home from "./Pages/Home";
 import Layout from "./Components/Layout";
 import Mail from "./Components/Mail";
-import Employees from "./Components/Employees";
+// import Employees from "./Components/Employees";
 import Leagues from "./Pages/Leagues";
 import Teams from "./Pages/Teams";
 import Fantasy from "./Pages/Fantasy";
 import Formation from "./Pages/Formation";
-import PlayerCard from "./Components/PlayerCard";
+// import PlayerCard from "./Components/PlayerCard";
+import Players from "./Pages/Players";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
             <Route path="/Teams" element={<Teams />} />
             <Route path="/Fantasy" element={<Fantasy />} />
             <Route path="Formation" element={<Formation />} />
-            <Route path="/Players" element={<PlayerCard />} />
+            <Route path="/Players" element={<Players />} />
             <Route path="/Favourites" element={<Favourites />} />
             <Route path="/Mail" element={<Mail />} />
             <Route path="*" element={<Error />} />
